@@ -31,4 +31,4 @@ https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.StackingClass
 | Hyper-Parameter |          Values           |                                                                                               Description |
 | --------------- | :-----------------------: | --------------------------------------------------------------------------------------------------------: |
 | final_estimator | [DecisionTreeClassifier(), SVC(), RandomForestClassifier(), LogisticRegression(), GaussianNB()] | The classifier which will be used to combine the base estimators.|
-| stack_method &['precict\_proba'] | The methods called for each base estimator. |
+| stack_method | ['precict\_proba'] | The methods called for each base estimator. |
