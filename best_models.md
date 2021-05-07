@@ -1,0 +1,14 @@
+# Best model for each embedding
+We report the best models we achieved for each embedding applying our pipeline.
+
+## PMD Source Code Analyzer
+We obtained the best model based on the PMD Source Code analyzer by using Random Forests. Feature selection did not improve the model. Hence, the final model was trained without any feature selection steps. Random forest was configured using 521 trees with a maximum depth of 24 as base estimators. Each of these trees was trained on the whole embedding. We considered the square root of the number of features of the embedding for each split when training the trees. Furthermore, the minimum number of required instances to conduct an internal split was set to 5. We used entropy to measure the quality of each split. To make predictions, we use a threshold of 0.6 for predicting the positive class of security-relevant commits. 
+
+## Checkstyle
+The best Checkstyle model was obtained using gradient boosting with conducting the feature selection steps of removing low variance features and highly correlated features along with applying recursive feature elimination. Features with less than 0.001% variance were removed. If a correlation of 95% or higher occurred in a pair of features, one dropped. We reduced the remaining features by half using RFE. We used 1,441 trees as base estimators for the gradient boosting classifier. The maximum depth of the trees was 90. The minimum number of samples to conduct a split was set to 3. The maximum number of features to consider when conducting a split was set to the square root of all features. Finally, we used a prediction threshold of 0.6. 
+
+## CK
+For the model based on the CK Tool embedding, we used random forests and applied feature selection. We used a minimum threshold for the variance of 0.001% and a maximum correlation threshold of 99\%. The random forest was trained using 379 base estimators with a maximum depth of 81. Each base estimator was trained on the whole data set. For each split, the maximum number of features to consider was the binary logarithm of the number of features in the embedding.  The minimum number of samples to conduct a split was 8. The quality of a split was measured in terms of Gini impurity. We used a prediction threshold of 0.6. 
+
+## Progex
+For the Progex model, we created a pipeline with feature selection and a gradient boosting classifier. We removed features with a variance below 0.001\% and set the maximum correlation threshold to 90\%. The estimator is based on 154 decision trees with maximally 39 layers. The number of features to consider for each split was limited to the binary logarithm of the number of columns in the embedding. The minimum number of samples per split was 8. The prediction threshold of the resulting model was set to 0.9. 

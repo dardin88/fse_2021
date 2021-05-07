@@ -1,4 +1,4 @@
-### Ensemble Techniques Hyperparameter Tuning
+# Ensemble Techniques Hyperparameter Tuning
 The hyper-parameter settings of the final classifiers are optimized for
 precision using
 [GridSearchCV](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html).
@@ -13,7 +13,7 @@ previously described base models as final estimators.
 
 ***
 
-#### Voting Classifier
+## Voting Classifier
 
 https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.VotingClassifier.html
 
@@ -24,7 +24,7 @@ https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.VotingClassif
 
 ***
 
-#### Stacking Classifier
+## Stacking Classifier
 
 https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.StackingClassifier.html
 

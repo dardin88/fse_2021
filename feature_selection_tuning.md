@@ -1,4 +1,4 @@
-### Feature Selection =Hyperparameter Tuning
+# Feature Selection Hyperparameter Tuning
 
 | Hyper-Parameter |          Values          |                                                                                                                Description |
 | --------------- | :----------------------: | -------------------------------------------------------------------------------------------------------------------------: |

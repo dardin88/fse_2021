@@ -29,3 +29,4 @@ performed by our machine learning pipeline.
 * [Feature Selection](feature_selection_tuning.md)
 * [Base Classifiers Hyperparameter Tuning](base_classifiers_tuning.md)
 * [Ensemble Techniques Hyperparameter Tuning](ensemble_techniques_tuning.md)
+* [Best Model for each Embedding](best_model.md)

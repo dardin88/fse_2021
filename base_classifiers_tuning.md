@@ -1,4 +1,4 @@
-### Base Classifiers Hyperparameter Tuning
+# Base Classifiers Hyperparameter Tuning
 A random search over the hyperparameter space is applied using scikit-learn's
 [RandomizedSearchCV](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.RandomizedSearchCV.html).
 e run the randomized search for 200 iterations per machine learning technique,
@@ -8,7 +8,7 @@ in the following tables, those not specified are kept to their default value
 provided by scikit-learn.
 
 ***
-#### Decision Tree
+## Decision Tree
 
 https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html
 
@@ -23,7 +23,7 @@ https://docs.scipy.org/doc/scipy/reference/stats.html
 
 ***
 
-#### Random Forest
+## Random Forest
 
 https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html
 
@@ -40,7 +40,7 @@ https://docs.scipy.org/doc/scipy/reference/stats.html
 
 ***
 
-#### Adaboost
+## Adaboost
 
 https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.AdaBoostClassifier.html
 
@@ -52,7 +52,7 @@ https://docs.scipy.org/doc/scipy/reference/stats.html
 
 ***
 
-#### Gradient Boosting
+## Gradient Boosting
 
 https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.GradientBoostingClassifier.html
 
@@ -67,7 +67,7 @@ https://docs.scipy.org/doc/scipy/reference/stats.html
 
 ***
 
-#### Support Vector Machine
+## Support Vector Machine
 
 https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html
 
@@ -80,7 +80,7 @@ https://docs.scipy.org/doc/scipy/reference/stats.html
 
 ***
 
-#### Logistic Regression
+## Logistic Regression
 
 https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html
 
@@ -94,7 +94,7 @@ https://numpy.org
 
 ***
 
-#### Gaussian Naive Bayes
+## Gaussian Naive Bayes
 
 https://scikit-learn.org/stable/modules/generated/sklearn.naive_bayes.GaussianNB.html
 
